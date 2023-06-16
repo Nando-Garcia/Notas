@@ -1,0 +1,24 @@
+JAVASCRITP, JS
+==================================================================================================
+
+Lenguaje interpretado, es decir, en ejecucion a lenguaje maquina sobre la marcha. Se define 
+como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico, del estándar ECMAScript.
+
+Al uso de JS puro se le llama tambien Vanilla JS
+
+ej.
+Usando jQuery vs. Vanilla, recorrer una lista de HTML y mostrar su contendio 
+
+jQuery
+    $('#lista li').each(function(indice, valor){
+         console.log('Hola soy el índice -> '+ indice + " hay este valor: " + valor);
+    });
+
+Vanilla JS
+    const list = document.querySelectorAll('#lista li');
+    list.forEach(function(currentValue, indice, array){
+       console.log("En el índice " + indice + " hay este valor: " + currentValue);
+    });
+
+
+

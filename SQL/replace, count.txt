@@ -1,0 +1,18 @@
+REPLACE (reemplazar caracteres)
+
+    replace(CAMPO,'*','*')
+
+    ej (quitar espacios)
+    SELECT NOM_MUNICIPIO,replace(NOM_ESTADO,' ','') AS NOM_EST FROM MUNICIPIOS
+    consola:
+    La Paz, BajaCaliforniaSur
+
+====================================================================================================
+COUNT (contar registros)
+
+    COUNT(CAMPO)
+
+    ej (mostrar total de municipios)
+    SELECT COUNT(NOM_MUNICIPIO) AS TOTAL FROM MUNICIPIOS
+
+====================================================================================================

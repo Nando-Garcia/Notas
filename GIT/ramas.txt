@@ -1,0 +1,52 @@
+CREAR RAMAS DEL PROYECTO Y CAMBIAR DE UNA A OTRA
+==================================================================================================
+
+Para listar las ramas localmente escribir:
+
+    - git branch
+
+Para crear una rama nueva escribir:
+    
+    - git branch <nombre de la rama>
+    - git branch loggin             p. ej.
+
+Para cambiar de una rama a otra escribir:
+
+    - git checkout <nombre de la rama>
+    - git checkout loggin           p. ej.
+
+NOTA 1: Cada rama tendra sus propios directorios y archivos, y se vera en el editor de texto los cambios al cambiar 
+        de una rama a otra
+NOTA 2: Cada rama tendra su log de los commits incluyendo los anteriores antes de crear la rama nueva
+
+
+
+------------------------------------------------
+EJEMPLO PRACTICO
+
+Dentro de un proyecto iniciado en git se pueden crear ramas, es decir, variaciones del proyecto,
+el nombre de la rama aparecera al final del comand prompt en parentesis, ejemplo:
+
+    proyecto orginal (rama master o main)
+    /catalogo
+        /css
+        /js
+        index.html
+        text.txt
+
+    Variacion del proyecto (rama loggin)
+    /catalogo
+        /css
+        /js
+        /loggin
+        index.html
+        text.txt
+        loggin.txt
+
+Para crear esta variacion se debera crear una rama nueva antes de agregar y crear los archivos y directorios nuevos
+    - git branch loggin
+    - git checkout loggin               cambiara de rama y ahora podremos trabajar agregando los nuevos cambios al proyecto
+    - git log                           mostrara el log de los commits sobre esta rama 
+
+
+

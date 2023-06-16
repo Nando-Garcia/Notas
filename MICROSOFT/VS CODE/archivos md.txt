@@ -1,0 +1,52 @@
+SHORTCUTS PARA MARKDOWN (Archivos .md)
+==================================================================================================
+
+Los archivos markdown (p. ej. README.md en proyectos de GITHUB) se usan generalmente para documentar
+algun repositorio, markdown es un lenguaje de marcado que reproduce etiquetas HTML y tambien cuenta
+con atajos para tutilos, formato de letra como negritas, cursiva, etc., imagenes, tablas etc
+
+En VS-CODE se puede ver el resultado presionando F1 o CTRL + SHIFT + P para abir la paleta de comandos
+sobre un archivo .md y teclear 'markdown' se mostraran las opciones disponibles, seleccionar 'open preview'
+y abrirla en una pestaña aparte
+
+# , ## , ### , #### ,               Titulos en diferentes niveles, igual a h1, h2, h3, ... de HTML
+*texto*                             Texto en cursiva
+**texto**                           Texto en negrita
+~texto~                             Texto tachado
+> texto                             Citas encerradas en un recuadro
+--- ó ___                           Linea divisoria entre parrafos, <hr>
+`porcion de codigo`                 Porcion de codigo, en forma de texto, especificando el lenguaje para los colores 
+```javascript           
+  bloque de codigo```
+
+    -- tablas                           Se genera la tabla al renderizar
+| col 1     | col 2     |
+| --------- | --------- |
+| cont 1    | cont 2    |   
+
+    -- listas
+* elemento 1
+* elemento 2
+
+1. elmento 1
+2. elmento 1
+
+    -- enlaces
+[texto](url del enlace "titulo a mostrar")
+ej.
+[da clic aqui](http://jw.org "Ir al sitio oficial")
+
+    -- imagenes
+![texto](url de la imagen ó ubicacion local "titulo")
+
+
+NOTA: Existen reglas para git hub como una lista de hacer, emojis, etc
+    https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+
+
+
+fuente:
+https://www.youtube.com/watch?v=oxaH9CFpeEE&ab_channel=FaztCode
+
+

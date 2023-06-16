@@ -1,0 +1,23 @@
+{
+  "name": "primer-proyecto-npm",
+  "version": "1.0.0",
+  "description": "Este es mi primer proyecto credo desde 0 con node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "primer",
+    "proyecto",
+    "color"
+  ],
+  "author": "Nando-Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

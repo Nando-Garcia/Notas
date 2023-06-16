@@ -1,0 +1,43 @@
+DEPLOY
+==================================================================================================
+
+Todos los proyectos se pueden ejecutar de manera local "localhost"
+
+Pero para desplegarlo y verlo en la internet, debe estar ejecutando node en el servidor
+para hacerlo de manera gratuita y en la nube existen servicios como HEROKU que no solo permite
+desplegar proyectos en node sino tambien en python, java, php, python, go, etc. para utilizarlo 
+se requiere crear cuenta:
+
+https://www.heroku.com/
+
+Se debe descargar un archivo .exe en windows (heroku CLI - contiene el comando para usarlo en cmd)
+
+probar desde cmd:
+    heroku --version
+
+Comandos:
+- heroku login              -> Abrira una pestaña del navegador y al logear mostrara el correo 
+                               del login de heroku en el comando prompt
+
+NOTA 1: Para subir proyecto a heroku primero debera crearse un repo en git
+NOTA 2: Se debera decir a git que ignore el directorio node_modules
+    1. git init             -> sobre proyecto 
+    2. crear archivo '.gitingore' y escribir sobre el:
+        node_modules        -> guardar cambios
+    3. git status           -> no aparecera el directorio 'node_modules'
+    4. git add .
+    5. git commit -m "primer comit"
+        NOTA 1: al subir el proyecto a heroku este asigna un puerto por tanto 
+                en el index se debera cambiar el puerto 3000 por el asignado por
+                el sistema, para eso usar el objeto process:
+                    app.listen(process.env.PORT || 3000)        // variables de entorno
+        NOTA 2: tambien se debera editar el package.json, agregar:
+                    "start": "node src/index.js"                // no se utilizara mas nodemon por era solo para desarrollar
+    6. git add .            -> tras los cambios
+    7. git commit -m "se modificaron los archivos para produccion"
+        NOTA 1: para continuar con los comandos que siguen se debe entrar a la sesion de heroku para ver
+                los pasos siguientes (comandos)
+    8. heroku git:remote -a ........        -> se saca de la pagina del perfil de heroku. se ejecuta una sola vez solo para hacer el enlace
+    9. git push heroku master
+        debe desplegar entre otras cosas "Build succeeded"
+    10. heroku open o copiar la url del mensaje de terminado el proceso 

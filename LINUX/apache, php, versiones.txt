@@ -1,0 +1,15 @@
+VERSIONES
+==================================================================================================
+
+apache2ctl -v           - Versión de apache instalada
+php -v                  - Version de php
+lsb_release -d          - Version de linux instalada
+java -version           - version de java
+
+
+APACHE
+==================================================================================================
+
+sudo /etc/init.d/apache2 restart         - reiniciar apache2
+sudo service apache2 restart             - reiniciar apache2
+

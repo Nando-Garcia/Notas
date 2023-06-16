@@ -1,0 +1,6 @@
+EXTENSIONES
+==================================================================================================
+
+live server                 Crea un servidor local en la PC, permitiendo ver los cambios del codigo automaticamente en el navegador
+prettier                    Hace un ordenamiento del codigo haciedolo 'prety'
+Color Highlight             Coloca el color sobre el codigo en hex (css)

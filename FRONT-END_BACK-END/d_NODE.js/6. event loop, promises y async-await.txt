@@ -1,0 +1,39 @@
+EVENT LOOP
+==================================================================================================
+
+Un evento/codigo blockeante, blockea el hilo de ejecucion de node, un ejemplo claro de eso 
+se puede ver en el ejercicio event_loop.js al iniciar el servicor y entrar en un navegador a la ruta:
+    http://localhost:5001/about
+El cual inciara el ciclo for y si al mismo tiempo en el navegador se ingresa a la siguiente ruta:
+    http://localhost:5001/
+No la cargara pues el ciclo for aun estara en ejecucion 
+
+
+El concepto de lenguaje asincrono se puede ver claramente en las primeras 3 instrucciones del ejercicio event_loop.js
+
+    Codigo asincrono - SENOIDAL
+    Codigo sincrono  - LINEAL
+
+
+PROMISES
+==================================================================================================
+
+La funcion de promises es esperar a que termine una funcion para regresar el resultado, este puede ser 
+de error o de resolucion y pasar los datos a las funciones 'resolve' y 'reject' de la promesa
+
+promises -> codigo sincrono
+
+
+
+ASYNC AWAIT
+==================================================================================================
+
+Mismo concepto que las promesas, pero de manera mas sencilla
+
+ASYNC    
+    Tipo de funcion que especifica que una en su contenido hay codigo asincrono (SENOIDAL)
+AWAIT
+    Al usar una funcion ASYNC el tipo de funcion AWAIT lo esperara
+
+ver promises.js al final 
+

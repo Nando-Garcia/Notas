@@ -1,0 +1,44 @@
+CONTENEDORES
+==================================================================================================
+
+Contienen todo lo que necesita una aplicacion para funcionar, es un entorno de ejecucion para un software que contiene todas sus dependencias,
+es un paquete aislado del sistema, p ej. en un contenedor tener una version diferetente de python y mysql que en otro contenedor.
+
+NOTA 1: varios contenedores pueden convivir en el mismo sistema operativo sin entrar en conflicto 
+NOTA 2: Un contenedor no necesita todas las herramientas de un SO, solo necesita el KERNEL, por lo tanto es liviano y no consume tantos recursos
+NOTA 3: Linux tiene un motor de contenendores llamado LXC (perfeccionado de conceptos tomados como namespaces y C-groups)
+    
+
+
+APLICACIONES WEB
+==================================================================================================
+    a) Aplicacion Monolítica
+        Todas las funcionalidades de una aplicacion estan en un solo paquete
+    b) Arquitectura de Microservicios
+        Cada microservicios es como una miniaplicacion con una funcion especifica p ej. autenticacion de usuario, chat, carrito, ventas, busqueda etc, por 
+        lo tanto su soporte o mantenimiento se facilita sin comprometer a la aplicacion completa. Cada microservicio tiene su contenedor
+
+
+
+KUBERNETES
+==================================================================================================
+    Software Open Source Creado por Google tambien llamado K8, fue creado a partir de un proyecto interno llamado Borg para optimizar el uso de los recursos de hardware, 
+    fue donado posteriormente a la fundacion Linux, kubernetes esta en todas las plataformas de nube como Azure, AWS, Google Cloud 
+
+    Orquestador de contenedores, se encarga de oirganizar y gestionar los contenedores, ayuda a automatixar los procesos con los contenedores, la asignacion 
+    de recursos y el despliegue, todo lo hace de forma declarativa mediante el plano de control 
+    
+    Control Plane - Conjunto de instrucciones que debe tener una implementacion de kubernetes (cluster)
+    Cada cluster tiene 2 nodos:
+        1) Master Node - Se encarga de la comunicacion, automatizacion, gestionar los procesos
+            - kube-scheduler            (ejecuta tareas programadas cada cierto tiempo )
+            - kube-control-manager      (ejecuta el cluster)
+            - kube-apiserver            (comunica el nodo maestro con los workers y entre ellos)
+            - etcd                      (conexion a la base de datos)
+        2) Worker Node - Es donde esta la aplicacion 
+            - kubelet                   (servicio que se comuniica con el apiserver del master node, es asi como se conectan)
+            - POD                       (Este POD es la aplicacion en si, dentro estan los contenedores de docker)
+
+
+fuente:
+https://www.youtube.com/watch?v=gjRoNFopFig&ab_channel=EDteam

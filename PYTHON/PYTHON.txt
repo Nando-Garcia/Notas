@@ -1,0 +1,39 @@
+PYTHON
+==================================================================================================
+
+
+Termninos
+ pip - gestor de paquetes que proporciona python para instalar librerias externas
+
+Lenguaje interpretado de proposito general
+
+LIBRERIAS
+==================================================================================================
+
+libreria pra interfazgrafica
+- tekinter
+- pysimplegui
+
+libreria deteccion de imagenes o rostros
+- opencv
+
+
+
+==================================================================================================
+==================================================================================================
+NOTAS
+
+1. Para correr scripts desde VS Code (ctrl + ñ) se debe colocar en la terminar el comando 'py'
+    ej      py ../Practicas/main.py
+
+
+
+==================================================================================================
+==================================================================================================
+
+Links de ayuda:
+
+FTP	                https://docs.python.org/3/library/ftplib.html
+FTP	                https://conectabell.com/ftplib-taller-de-python/
+Hora y fecha	    https://docs.python.org/2/library/datetime.html
+copiar, mover, etc	https://programacion.net/articulo/operaciones_con_ficheros_y_directorios_utilizando_python_1461

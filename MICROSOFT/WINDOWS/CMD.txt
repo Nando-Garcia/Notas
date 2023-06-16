@@ -1,0 +1,11 @@
+CMD
+==================================================================================================
+
+COPIAR DE UN SERVIDOR A OTRO EN LA MISMA RED
+
+    xcopy "origen" "destino" parametros
+ej. xcopy "\\10.2.233.174\D$\MapIntAutomatico\MXD\kmzGenerado\*.kmz" "\\10.2.233.167\C$\inetpub\wwwroot\rmgir\uploads\MapaIntensidades\" /s /i /Y
+
+    fuente: 
+    https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/xcopy
+

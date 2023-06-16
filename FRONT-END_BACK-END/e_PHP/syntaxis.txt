@@ -1,0 +1,32 @@
+Syntaxis y metodos en codigo
+==================================================================================================
+
+CONCATENAR NOMBRE DE VARIABLE EN CICLO FOR por ej. guardar parametros de URL (GET) en varibles (cantidad de variables dada en for):
+
+    url de ejemplo: http://10.2.234.131/Hacienda/?&1=proyecto1?&2=proyecto2
+
+        for ($i=1; $i <=2; $i++){
+            ${'persona' . $i} = $_GET[$i];
+        }
+
+    consola: persona1 = proyecto1
+             persona2 = proyecto2
+
+-------------------------------------------------------------------------
+GUARDAR VARIABLE PHP EN JS
+
+Forma 1:
+    var nombre1 = '<?php echo $ejemplo;?>';
+Forma 2:
+    <?php 
+        echo '
+            <script type="text/JavaScript"> 
+                prompt($_GET['ejemplo']);
+            </script>
+        ';
+    ?>
+
+fuente:
+https://www.geeksforgeeks.org/how-to-run-javascript-from-php/
+
+-------------------------------------------------------------------------

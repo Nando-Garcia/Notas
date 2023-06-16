@@ -1,0 +1,9 @@
+EJECUTAR (WIN + R)
+==================================================================================================
+
+taskmgr         - admin de tareas
+mstsc.exe       - escritorio remoto
+taskschd.msc    - tareas programadas
+Inetmgr.exe     - Internet Information Services (IIS)
+explorer.exe shell:RecycleBinFolder     - Papelera de reciclaje
+eventvwr.msc    - Visor de eventos

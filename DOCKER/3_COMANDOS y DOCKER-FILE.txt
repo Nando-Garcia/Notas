@@ -1,0 +1,60 @@
+COMANDOS 
+==================================================================================================
+    docker                                  Muestra listado de comandos 
+    docker ps                               Enlista los contenedores ejecutandose
+    docker stats                            Enlista detalles de cada contenedor (recursos consumidos por contenedor)
+    docker run -it -d ubuntu                Crear contenendor a partir de una imagen, en este caso con ubuntu y parametro para correr en 2o plano, le asigna un IDENTIFICADOR (numero muy largo)
+    docker exec -it c62 /bin/bash           Navega dentro del sistema de archivos del contenedor (- c62 p ej. - no es necesario poner todo el IDENTIFICADOR) utilizando la consola bash para ello  
+                                            cambia al IDENTIFICADOR el comamnd prompt para esperar instrucciones para ese contenedor, p ej. 'ls' para listar
+        -> cd /root
+        -> echo "cualquier contenido" >> archivo.txt            Se crea un archivo en esa ubicacion dentro del contenedor independientemente del SO (distro) padre
+        -> exit                                                 Sale del contenedor, es decir, al SO padre 
+    docker run -it -d debian:buster         Se crea contenedor con SO debian en su version buster (https://hub.docker.com/  -->  buscar debian para ver las versiones/etiquetas)
+
+Para contenerizar una app (desarrollada en node p. ej) se necesita crear el DOCKER-FILE para crear la imagen
+(clic derecho crear nuevo archivo -> Dockerfile), una vez creado se pueden crear imagenes e instanciarlas/contenerizarlas
+esta imagen tendra el SO (distro) indicado y todas las acciones posteriores como crear carpetas, instalar paquetes/software 
+copiar archivos de la PC local al directorio indicado en el contenedor, etc.
+
+
+    docker build -t primer_proyecto_nando           Compila nuestra imagen nombrandola (p ej. primer_proyecto_nando), se ejecutan todas las intrucciones del DOCKER-FILE
+    docker images                                   Enlista las imagenes creadas con el nombre asignado en el ej. enlistara 1 imagen -> 'primer_proyecto_nando'
+    docker run -it primer_proyecto_nando /bin/sh    Se CREA el contenedor de la imagen 'primer_proyecto_nando' y entra en modo interactivo a los archivos del contendor
+    docker stop [IDENTIFICADOR]                     Detiene el contenedor con el IDENTIFICADOR indicado 
+    docker rm [IDENTIFICADOR]                       Elimina el contenedor con el IDENTIFICADOR indicado
+    docker run -it -d -p 3001:3000 primer_proyecto_nando            Crea contenedor asignando el puerto 3000 (p ej.) interno del contenedor al puerto 3001 del servidor padre 
+    docker run -it -d -p 3002:3000 primer_proyecto_nando
+    .
+    .
+    .
+    docker ps
+
+    
+
+DOCKER-FILE
+==================================================================================================
+Archivo que le dice a docker como crear la imagen (este archivo se puede versionar, editar)
+
+ejemplo de archivo DOCKER-FILE:
+    FROM node:16-alpine                 Se indica que se instalara y con que software preinstalado de ser el caso, node en este ejemplo, se busca en https://hub.docker.com/
+    WORKDIR /app                        Crea carpeta app y se colocara en ella para que los siguientes comandos se ejecuten alli 
+    COPY  [] []                         Copia archivos de la computadora  hacia la imagen del contenedor que se esta creando 
+    RUN npm install                     Instruccion para ejecutar comandos listados en el archivo copiado (dependencias de node p ej)
+    COPY . .                            Copia todo (archivos y directorios) en la hubicacion /app hacia la imagen del contenedor 
+-- en este punto no hay ningun proceso corriendo 
+    EXPOSE 3000                         Expone/habilita para su uso algun puerto especificado, puerto 3000 p ej.
+    CMD ["node", "main.js"]             Iniciando el contenedor inmediatamente ejecute lo indicado, en este ej. node y el script desarrollado 'main.js'
+-- en este punto se habilito el puerto 3000 pero dentro del contenedor sin afectar al puerto 3000 del SO padre  
+
+NOTA: Se puede crear alli mismo un archivo '.dockerignore' para indicar que ignorará (archivos/directorios)
+
+
+
+CONSEJOS:
+- Se puede crear un servidor en la nube con docker preinstalado con linode, tiene un coste
+  https://www.linode.com/
+- Probar sistema de contenedores con minecraft, instrucciones en video (fuente)
+
+
+fuente:
+https://www.youtube.com/watch?v=9eTVZwMZJsA&ab_channel=RingaTech

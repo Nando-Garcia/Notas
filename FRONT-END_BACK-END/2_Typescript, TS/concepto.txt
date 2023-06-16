@@ -1,0 +1,48 @@
+TYPESCRIPT
+==================================================================================================
+
+Lenguaje desarrolado por Microsoft, es JS pero aumentando sus capacidades como por ejemplo 
+le da a JS un tipado fuerte teniendo q especificar cada tipo de dato que se utilice entre otras
+cosas, su sintaxis es muy parecida a C#.
+
+Se configura por medio de un json (tsconfig.json) que se crea con el comando:
+    tsc --init                  (desde la consola cmd si es windows)
+
+
+
+NOTA 1: Para su ejecucion se requiere un compilador ya que los navegadores solo trabajan con JS
+para ello con el siguiente comando se crea el JS a partir del compilador sobre los archivos .ts
+    tsc (ubicacion de archivo)
+    tsc ts-js/ejemplo.ts
+
+NOTA 2: Trabajar con TS evita generalmente los errores en grandes poryectos sobre produccion 
+
+NOTA 3: Otro compilador para TS es BABEL
+
+NOTA 4: TS funciona correctamente para ANGULAR, REACT, VUE y NODE
+
+
+INSTALACION
+==================================================================================================
+
+Su instalacion es por medio de comandos ya sea por windows o linux, pero previamente tener instalado NODE:
+    1. https://nodejs.org/es/              -> Instalar la version LTS (ver documento de instalacion en directorio de NODE)
+se puede instalar TS en un proyecto individual (comando 2.1) o de manera global (comando 2.2)
+    2.1 npm install typescript --save-dev
+    2.2 npm install -g typescript 
+comprobar la version instalada
+    3. tsc -v  
+nos dirigimos donde este el proyecto:
+    4. cd [ubicacion]
+se crea el fichero de configuracion:
+    5. tsc --init           ó tsc -init (se genera el tsconfig.json)
+        - Se da la configuracion requerida para trabajar con TS
+Una vez teniendo un script en TS se compila el archivo .ts para generar el .js compatible con los navegadores
+    6. tsc ts-js/main.ts            (se genera el archivo .js)
+Para evitar compilar manualmente cada que se haga algun cambio sobre el archivo .ts
+    7.1 tsc ts-js/main -w            (modo watch mode)
+Compilar todos los archivos .ts automaticamente
+    7.2 tsc ./ -w               (windows, directorio actual)
+    7.2 tsc ts-js/*.ts -w       (mac/linux)
+
+

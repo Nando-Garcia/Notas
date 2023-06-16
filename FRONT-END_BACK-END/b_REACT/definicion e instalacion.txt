@@ -1,0 +1,62 @@
+REACT
+==================================================================================================
+
+Libreria de Javascrypt -open source- para desarrollar interfaces de usuario, fue creada por Facebook en el 2013.
+Enfocada al Front-End solo para mostrar elementos en pantalla, su extension en jsx:
+
+En esencia REACT hace uso de funciones que retornan HTML y para esa accion necesita jsx
+
+   1. La UI de una web esta formada por piezas (botones, textos, imagenes, menus, formularios, etc), en 
+      REACT a estas piezas se le llama componentes donde estan encapsulados tanto el html como el js y el css, 
+      estos componentes llevan el modelo de POO, para mostrarlos en pantalla se debe instanciar el componente
+      en el HTML como si fuera una etiqueta y los atributos con los parametros/propiedades de la funcion
+
+   2. JSX (javascript extended), lenguaje que introduce REACT que permite escribir HTML dentro de js con su misma sintaxis
+      sin necesidad de acceder al DOM con js puro
+
+   3. Virtual DOM (Document Object Model - toda la esctrucutra HTML de un documento o una pagina web, incluyendo el head, body, etc), 
+      REACT copia el DOM en memoria (RAM) para su rapido calculo y acceso, y cualquier cambio al DOM lo renderiza de forma mas eficiente
+      y rapida
+
+   4. Manejo del estado. Es decir los cambios que haga el usuario final antes de mandarlo al back-end, en otras palabras, el manejo de los 
+      datos desde el front-end (carrito p ej.), hacerlo en js puro es una tarea compleja y cansada, con las tecnologias
+      del font-end actuales existen librerias o frameworks para facilitar esa tarea (ver infografia -> estado.png), en otras palabras
+      el estado es un objeto en js con todos los datos asociados a los componentes con los que el usuario esta interactuando
+      
+      NOTA 1: El estado lo tienen que compartir entre los componentes y estos tienen todo encapsulado, para solucionarlo se 
+              pueden usar herramientas como REDUX en REACT, el cual tiene un estado global que consumen todos los componentes o 
+              CONTEXT API con un estado comun (padre) entre los componentes
+
+Existe un framework para react llamada NEXT
+
+
+METODOS
+---------------------------------------------
+   
+   render - se encarga de imprimir elementos en pantalla
+
+
+USAR REACT
+---------------------------------------------
+
+Pros 
+   - Mayor comunidad de desarrolladores por lo que la documentacion de errores, metodos, configuraciones, etc es mayor 
+   - Mayor demanda laboral para fron-end 
+
+Contras
+   -  Media curva de aprendizaje (JSX) 
+
+
+
+
+
+INSTALACION
+==================================================================================================
+
+Dentro de VS Code instalar la extension ES7 + React para agilizar y facilitar el desarrollo con React
+de igual forma tener instalado Node.js
+
+
+
+fuente:
+https://www.youtube.com/watch?v=kEMr0rFjB7E&ab_channel=EDteam

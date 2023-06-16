@@ -1,0 +1,61 @@
+INICIAR PROYECTO NODE
+==================================================================================================
+
+Como sucedio con el ejemplo anterior haciendo uso del modulo 'colors', al instalar ese y todos
+los modulos a usar en el proyecto se crearan 2 archivos json y un directorio como se enlista:
+    - node_modules              Directorio que contiene todo el codigo de los modulos instalados
+    - package-lock.json         Lista de modulos dependientes (extras) de los modulos instalados 
+    - package.json              Lista de los modulos instalados sin dependencias (modulos) externas
+
+Todo proyecto node cuenta con esos 3 elementos, para crear el 'package.json' se usa el comando:
+        - npm init              Se creara nuevo proyecto NODE
+
+        Al iniciar el proyecto se debera configurar lo siguiente:
+            1. Nombrar el proyecto o dejar el nombre por defecto
+            2. Version, generalemte en formato SEMVER (1.0.0 p. ej.)
+            3. Descripcion
+            4. Archivo inicial o entry point, por defecto lo dejara como 'index.js'
+            5. Comando de testing, comando para comprbar codigo, se puede dejar vacio
+            6. Repositorio de git, se puede dejar vacio
+            7. Palabras clave para ser buscadas por npm, p. ej. primer, proyecto, api, etc
+            8. Autor, nuestro nombre o por lo general nombre de usuario de git
+            9. Licencia, indicarla o dejar por defecto ISC
+
+        Al terminar creara un 'package.json', finalizar con 'yes', este 'package.json' contiene una sección 
+        llamada 'scripts' la cual sirve para crear nuestros propios comandos, ej.
+            .......
+            "scripts":{
+                "ejecutar": "node index.js" 
+            }, .....
+        para correr desde consola se debera colocar:
+            - npm run ejecutar
+        normalmente el nombre para ese comando es 'start' simplificando sin el 'run' el comando como sigue
+            - npm start
+        
+        Esto es util para abreviar comandos largos, entre otras cosas, ver ejercicio 'Ejercicios/npm'
+
+Aqui ya se pueden instalar modulos o dependencias como express (sirve principalmente para hacer API's), comando 
+de ejemplo de instalacion de express:
+    - npm install express
+
+Ver Proyecto de Api-Rest 'Alumnos'
+
+------------------------------------------------------------
+Modulos del proyecto
+
+Existen modulos para mejorar o facilitar al momento de desarrollar el proyecto como 'nodemon' que evita ejecutar desde 
+comando cada que se realice un cambio en algun archivo js, para especificar a node que NO es un modulo fundamental para el 
+funcionamiento del proyecto se debe colocar lo siguiente en el comando a la hora de instalarlo 
+    - npm install nodemon
+      npm i nodemon -D              Especifica que no es un modulo importante 'devDependencies' en el 'package.json'
+
+Para usar este modulo en el script de 'package.json' se debe colocar nodemon en lugar de node e iniciar con [npm run dev] y cada que 
+haya un cambio en toda la carpeta/proyecto se va a ejecutar el comando especificado en el 'package.json' , ver ejercicio 'npm'
+
+
+------------------------------------------------------------
+Modulos globales
+
+Si se llama a un modulo node buscara dentro de node, los instalados manualmente '/node_modules', los modulos para desarrollar o si no, 
+en los modulos globales, es decir, los que se instalen manualmente pero de forma global, ejemplo:
+    - npm i nodemon -g

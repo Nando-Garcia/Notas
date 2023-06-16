@@ -1,0 +1,45 @@
+POSICIONAMIENTO
+
+UN elemento se considera posicionado si tiene el 'position'
+- relative 
+    - se queda en su lugar del flujo, al cambiar sus coordenadas conserva su tamaño en el flujo 
+- absolute 
+    - pierde el tamaño en el flujo
+    - su dimensiones se calculan con respecto al contenido
+    - sus coordenadas (right, top, etc) se calculan segun el ancestro mas cercano posicionado 
+- fixed
+    - sus coordenadas siempre son calculadas respecto al body o ventana del navegador
+    - no se mueve con el escrol 
+
+Si contiene 'static' (por defecto lo tiene todos los elemtos) NO esta posicionado, pues no rompe 
+el flujo del html
+====================================================================================================
+
+MODELO DE CAJA
+
+
+
+DISPLAY
+
+Por defecto los elementos en el html tiene la propiedad 'block', es decir en bloque (el flujo del html es block)
+- block (en bloque, uno debajo del otro )
+- in-line (en linea, uno a lado del otro)
+- flex
+- table
+
+NOTA: los eementos 'a' por defecto son in-line
+
+
+====================================================================================================
+
+UNIDADES
+- %
+- px (pixeles literales, no recomendado en responsive design)
+- em (valor del mismo elemento padre que exista, p. ej div padre width:30px    --->    div hijo width:1em = 30px)
+- rem (toma el valor del body como referencia ya NO del elemento padre) 
+- vh ()
+- vw ()
+
+NOTA: el 'body' por defecto el tamaño establecido son 16px
+
+

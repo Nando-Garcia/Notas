@@ -1,0 +1,24 @@
+CREACION DE API REST PARA CONSULTA DE ALUMNOS EN LA RED 
+==================================================================================================
+
+Tecnologias usadas:
+- node, framework express
+
+1. Se instalo node js a la pc local (windows)
+2. Se creo carpeta con nombre de proyecto y con el archivo index.js (vacio por ahora)
+3. Con cmd se coloco en al ubicacion del proyecto y se inicio proyecto nuevo con node con el comando:
+        npm init
+   se inicia nuevo proyecto en node agregando algunas configuraciones como nombre (todo en minuscula y junto), punto de entrada, etc
+4. Se instalo el framework express para importarlo en el index.js
+        npm install express
+5. Dentro del codigo se importo el framework express para generar la API
+6. Se escribio el codigo del archivo index.js con el comportamiento de la API 
+7. Se inicia el proyecto con el comando:
+        node index.js
+8. Se probo desde un navegador:
+        http://localhost:8080
+        http://localhost:8080/api/estudiantes/
+        http://localhost:8080/api/estudiantes/1
+
+fuente:
+https://www.youtube.com/watch?v=AWcm56_eNZg&ab_channel=Codelia

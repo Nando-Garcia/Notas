@@ -1,0 +1,30 @@
+SCRIPTS - SQL DEVELOPER
+==================================================================================================
+
+SECUENCIA PARA AUTOINCREMENTAR EN 1 EL ID DE CUALQUIER TABLA (AUTOINCREMENT) - ORACLE
+
+    CREATE SEQUENCE EJEMPLO_TABLA_SECUENCIA_inicio --Nombre de la sequencia
+    START WITH 1
+    INCREMENT BY 1;
+
+    CREATE TRIGGER Incremento_EJEMPLO_TABLA --se nombra el trigger
+    BEFORE INSERT ON EJEMPLO_TABLA --nombre de la tabla
+    FOR EACH ROW
+    BEGIN
+        SELECT EJEMPLO_TABLA_SECUENCIA_inicio.NEXTVAL --nombre de la secuencia ya definida
+        INTO :NEW.ID_EJEMPLO_TABLA -- que campo se va a autoincrementar en 1
+        FROM DUAL;
+    END;
+
+------------------------------------------------
+
+ELIMINAR REGISTROS (ej)
+
+    DELETE FROM COMITE
+    WHERE ID_COMITE = (SELECT MAX(ID_COMITE) FROM COMITE);
+
+    DELETE FROM COORDINADORES
+    WHERE ID_COORDINADOR = (SELECT MAX(ID_COORDINADOR) FROM COORDINADORES);
+
+    DELETE FROM BRIGADAS_INVOLUCRADAS
+    WHERE ID_BRIGADAS = (SELECT MAX(ID_BRIGADAS) FROM BRIGADAS_INVOLUCRADAS);

@@ -1,0 +1,35 @@
+INICIAR PROYECTO REACT
+==================================================================================================
+
+Previamente se debera tener instalado node en el equipo, escribir comando:
+    
+    - npx create-react-app nombre-del-proyecto
+
+Al instante creara toda la esctructura de carpetas, dependencias, para iniciar el proyecto:
+    - cd nombre_proyecto        (se entra al directorio creado)
+    - npm start                 (iniciaria proyecto con la url donde se desplegara, http:\\localhost:3000)
+
+Ya iniciado el proyecto se debe trabajar en la carpeta 'src' donde se pueden eliminar algunos archivos
+por ser irrelevantes, por lo tanto se pueden eliminar:
+    - reportWeVitals.js
+    - setupTest.js
+    - App.test.js
+Una vez eliminados se debe editar el archivo index.js
+
+NOTA 1: Cada cambio dentro del proyecto se renderizara automaticamente en el navegador debido al autorefresh, en los
+        modulos hay un 'watcher' que actualiza cada cambio realizado automaticamente sin refrescar la pantalla
+NOTA 2: Quitar el modo estricto del 'index.js' para que no estorbe al momento de aprender
+
+fuente:
+https://www.youtube.com/watch?v=wGxDfSWC4Ww&ab_channel=VictorRoblesWEB
+
+
+
+---------------------------------------------
+
+Otra forma de iniciar un proyecto es con 'vite', creara y levantara el proyecto mucho mas rapido 
+con menos dependencias con solo lo esencial, tan solo teclear comando:
+    
+    - yarn create vite
+
+Preguntara con que tencnologia creara el proyecto, con REACT preguntara si con js o con ts 

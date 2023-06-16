@@ -1,0 +1,25 @@
+COMANDOS BASICOS
+==================================================================================================
+
+shutdown -r now         - Reiniciar ahora
+
+
+Descargar archivos 
+-----------------------------------------------------------
+
+curl https://github.com/cambecc/grib2json/archive/master.zip            - descarga el archivo de la red en la ubicacion actual
+wget https://github.com/cambecc/grib2json/archive/master.zip            - descarga el archivo de la red en la ubicacion actual
+
+
+Descomprimir archivos 
+-----------------------------------------------------------
+tar xzvf archivo.tar.gz
+unzip archivo.zip
+
+
+
+
+UBICACIONES
+==================================================================================================
+DIRECCIONES VIRTUALES DENTRO DEL DOMINIO CON APACHE SERVER  p ej.  www.nombre.com/productos -> /var/www/principal/apps/catalogo/productos
+/etc/apache2/conf-available/archivo.conf        - archivo.conf, nombre del archivo con los host virtuales

@@ -1,0 +1,17 @@
+﻿error por service pack1
+(equipo: windows10)
+
+SOLUCION:
+Panel de control\Programas\Programas y características -> (panel izquierdo) "Activar o desactivar las caracteristicas de windows":
+	1. activar la casilla de .NET framewokr 3.5, esperar descarga y cambios
+
+NOTA: Si aparece error de descarga, el conflicto es por windows update
+SOLUCION:
+	1. Win + R -> regedit
+	2. (panel izquierdo, ruta) HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+	3. Si existe el elemento "UseWUServer" modificar a 0 si no crearlo
+	4. Aceptar y salir
+	5. Reiniciar windows
+	
+fuente:
+https://edulab.unitn.it/tecnici/fix-error-0x800f0954-installing-net-framework-3-5-or-any-optional-feature/

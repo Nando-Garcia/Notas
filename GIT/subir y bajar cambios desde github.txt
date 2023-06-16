@@ -1,0 +1,27 @@
+SUBIR Y BAJAR CAMBIOS REALIZADOS A GITHUB
+
+SUBIR CAMBIOS A GITHUB
+
+1. Una vez creado el repositorio y cargada la informacion, cada cambio se debera ir actualizando 
+   al repositorio en git hub para esto (ya hechos los cambios) ingresar los comandos:
+    - git status
+    - git add *
+    - git commit -m "mensaje" 
+    - git branch -M main                No es tan necesario este comando una vez hecho el primer push
+    - git push -u origin main
+
+NOTA 1: NO es necesario agregar el enlace <git remote add origin URL> a github puesto que ya el proyecto esta enlazado desde el inicio
+NOTA 2: Si se hicieron cambios en una RAMA NUEVA el utlimo comando debera cambiar:
+    git push -u origin rama-alternativa
+
+
+
+
+BAJAR CAMBIOS DESDE GITHUB
+
+1. Estando en el equipo local que sea, es decir, PC casa, LapTop casa, PC trabajo, etc
+   se deberan actualizar los ultimos cambios que se hayan subido a GITHUB para continuar 
+   desde ese equipo desde ese ultimo cambio, para eso ingresar los comandos:
+    - git pull              desde el directorio local con el proyecto ya iniciado con git
+
+    

@@ -1,0 +1,40 @@
+NPM
+==================================================================================================
+
+Conjunto de modulos creados por la comunidad de desarrolladores que pueden ser usados al ser opensource, 
+para consultar un respositorio de modulos tanto de node como de javascript existe el siguiente sitio:
+https://www.npmjs.com/
+
+ejemplo de uso:
+    En la barra de busqueda se coloca la palabra clave 'colores' y saldran paquetes relacionados con colores
+    al entrar en alguno se puede ver como instalarlo y utilizarlo, asi como ejemplos practicos, para instalar:
+        - npm install colors 
+        - npm i colors                  -> es lo mismo al anterior
+
+NOTA: node y npm aunq estan juntos dentro del mismo software funcionan diferente pues npm es el 
+      instalador de pqaquetes de node. Para ver la diferencia se pueden ver las versiones de ambos
+        - node --version
+        - npm --version
+
+Al instalarlos se colocan en un directorio con nombre 'node_modules', estos archivos no se deben modificar
+para el correcto funcionamiento de ellos en nuestro proyecto, solo se deben llamar 
+
+Para eliminar algun modulo en lugar de eliminar carpetas y editar el archivo 'package.json' se usa el comando:
+        - npm remove colors
+
+
+------------------------------------------------------------
+Ejemplos de modulos existentes:
+    - lodash        funciones para trabajar con datos de js
+    - dayjs         permite trabajar con fechas 
+    - bootstrap     framework de css, para trabajar desde node
+
+NOTA: todos los modulos que se instalen para el proyecto los contendra la carpeta 'node_modules'
+      y el archivo 'package.json' tendra la lista de los modulos instalados, este archivo tambien 
+      sirve para instalar todos los modulos utilizados si la carpeta 'node_modules' ha sido borrada
+      o el proyecto se copia a otro equipo, etc. tan solo con el comando:
+        - npm install               -> se creara la carpeta 'node_modules' con todos los modulos usados
+
+
+
+

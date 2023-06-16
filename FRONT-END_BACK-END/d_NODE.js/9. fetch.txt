@@ -1,0 +1,14 @@
+FETCH
+==================================================================================================
+
+API moderna que contiene javascript, se puede usar tanto en el navegador como en el servidor, su objetivo es consultar 
+datos de alguna direccion, se usa de la siguuiente manera:
+
+    fetch ('url')
+
+NOTA: Para versiones de node anteriores a la v.18 se debe instalar un modulo para 
+      hacer uso de fetch
+
+CONSEJO:
+usar pagina generadora de json con datos falsos (para prueba):
+https://jsonplaceholder.typicode.com/               --> clic en Resources /posts

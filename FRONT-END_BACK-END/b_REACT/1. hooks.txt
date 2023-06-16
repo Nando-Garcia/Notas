@@ -1,0 +1,18 @@
+HOOKS
+==================================================================================================
+
+Anteriormente los componentes se declaraban mediante clases, se extendia la clase 'component', los 
+HOOKS son funciones que permiten que los componentes funcionales se enganchen a funciones propias del 'core'
+de REACT sin tener que crear clases para instanciarlas, ej. de HOOKS para hacer uso del estado:
+
+    import { useState } from "react"
+
+NOTA 1: Esta funcion se introdujo en el año 2018, al dia de hoy aun se puede 
+        hacer uso de componentes de clase en lugar de HOOKS en algunos proyectos 
+
+los HOOKS mas usados son:
+    - useState          -> compartir el estado 
+    - useEffect         -> ciclo de vida del componente
+    - useRef            -> manejo del DOM
+    - useContext        -> manejo del estado global de la aplicacion 
+ 

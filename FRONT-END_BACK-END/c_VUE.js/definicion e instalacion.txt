@@ -1,0 +1,68 @@
+VUE.js
+==================================================================================================
+
+Framework Progresivo - Puede implemenetarse todo un entorno para desarrollar sitio web en el Front-End o se puede 
+agregar en algunas secciones del proyecto solamente, no se requiere cambiar todo el proyecto, en caso de existir uno.
+Trabaja principalmente con JS pero de igual forma se puede implementar JSX o TS
+
+Capas de  progresividad:
+    1. Render declarativo  
+    2. Sistema de componentes 
+        piezas de interfaz, como tarjeta de producto, menu de navegacion, formulario etc 
+    3. Enrutamiento en el cliente 
+        paginas intenrnas dentro del mismo sitio
+    4. Manejo del estado a gran escala  
+        estado comun en un sitio web p ej. carrio vacio dentro de una tienda online 
+    5. Build System
+        Empaquetado de todo el proyecto listo para mandarlo a producción 
+    6. Persistencia de datos entre cliente y servidor 
+        Tener datos que se mantienen en una aplicacion 
+
+Vue.js  combina buenas practicas de Angular y React  
+    React (libreria)
+        - Virtual DOM
+        - La reactividad (cambios renderizados rapidamente)
+        - Componentes reutilizables
+
+    Angular (framework)
+        - Directivas p ej. V-for, v-on, v-bind, v-if (ver infografia)
+        - Entorno de framework 
+
+Single File Components
+    En un solo archivo esta todo lo que se necesita para un componente css, javascript, html 
+
+NOTA: Dentro del Single File Components (en le archivo dond esta todo) se puede usar:
+    - HTML o algun preprocesador como PUG
+    - JS, TS o JSX
+    - CSS, SASS, PostCSS o cualquier preprocesador
+
+fuente:
+https://www.youtube.com/watch?v=AqesL138vMA
+
+
+ Pros 
+    - Facil de instalar y utilizar por su corta curva de aprendizaje
+    - Trabaja mejor con PHP-Laravel por su afinindad y gran compatibilidad
+    - Muy util para la maquetacion web (HTML-CSS)
+
+ Contras
+    - No tiene soporte por una empresa grande mas bien por una comunidad de desarrolladores
+    - Menor demanda laboral 
+
+
+
+
+INSTALACION
+==================================================================================================
+
+CDN
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+fuente:
+https://es.vuejs.org/v2/guide/installation.html
+
+
+ejercicio de practica (Jonathan Galindo)
+https://jasonwatmore.com/post/2018/07/14/vue-vuex-user-registration-and-login-tutorial-example
+
+

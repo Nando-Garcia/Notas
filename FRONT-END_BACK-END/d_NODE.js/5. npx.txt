@@ -1,0 +1,26 @@
+NPX
+==================================================================================================
+
+Comando para ejecutar aplicaciones de consola, se pueden instalar paquetes que funcionaran como 
+herramientas de consola como el ejemplo anterior 'nodemon' pero con npx se ejecutaran de forma inmediata
+sin instalar el modulo
+    - npx nodemon index.js
+
+Al instante, si no esta instalado el modulo, utilizara nodemon, pero node preguntara antes de usarlo, de lo 
+contrario si queremos usar nodemon como comando sobre cmd y no sobre un proyecto inciado con node: 
+    - npm nodemon src/index.js
+se debe ir a la ruta del comando
+    - .\node_modules\.bin\nodemon src/index.js      (p ej. usando barras invertidas en windows)
+
+npx va directo a esa ruta para buscar el comando si no esta lo va a descargar para usarlo  
+
+
+
+CONSEJO:
+Al usar react.js se puede hacer uso de npx
+
+NOTA 1: Al utilizar nodemon (p ej.) como comando, significara que se intalo como aplicacion de consola, 
+        ubicacion de comando:
+            node_modules/.bin
+        Especificamente funcionan como CLI (Common Line Interface), ejemplo de uso en windows (usando barra invertida):
+            - .\node_modules\.bin\nodemon src/index.js              (ejemplo de ejercicio - /npm)

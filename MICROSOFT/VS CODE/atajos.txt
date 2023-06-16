@@ -1,0 +1,11 @@
+ATAJOS DE TECLADO
+==================================================================================================
+
+Ctrl + M                            Identado con tabulador
+Ctrl + flecha arriba o abajo        Subir vista de pantalla
+Ctlr +,-                            Aumentar/dismunuir zoom del VS Code
+Ctrl + C,V (sin seleccionar texto)  En la fila donde este, se copia y pega toda la linea abajo
+Alt + flecha arriba o abajo         Mueve la linea verticalmente
+Ctrl + enter                        Salta a la siguiente linea donde este, sin estar al final
+Ctrl + espacio                      Muestra opciones (p ej. entre llaves muestra lo contiene un objeto)
+Ctlr + clic (sobre funciones)       Cambia el icono del cursor y al dar clic muestra en otra pestaña el codigo interno  de esa funcion 

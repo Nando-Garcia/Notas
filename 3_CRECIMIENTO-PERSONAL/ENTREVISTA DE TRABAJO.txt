@@ -1,0 +1,88 @@
+﻿ENTREVISTA DE TRABAJO
+==================================================================================================
+
+Primer contacto con la persona, las empresas ven como reaccionan a las preguntas, si son analiticas, ordenadas, respetuosas, dinamicas etc
+p ej. ¿Cuantas ventanas tiene la CDMX?  ->  Demostrar interes por encontrar la respuesta
+
+Preguntas clave:
+1. Porque deberia contratarte?
+    Es el momento para venderse y decir como se puede aportar a la empresas
+2. Hay algo que quisieras saber sobre nosotros?
+    Demsotrar interés, preguntar los objetivos a lograr y que herramientas de trabajo usan o quienes son 
+    sus clientes, como aprender mas de ellos, etc
+3. Porque quieres trabajr con nosotros?
+    Leer sobre la mision de la emrpesa, revisar su sitio web y relacionarlo con las habilidades propias
+4. Cual ha sido tu mayot desafio y como lo superaste?
+    Es el momento de demostrar como se adapta uno a los cambios y a los retos
+5. Que puedes decirnos de ti
+    Destacar los puntos claves de mi carrera y de mis aspiraciones profesionales de forma breve
+6. Como reaccionas ante las criticas?
+    Demostrar estar dispuesto a mejorar constantemente, no egocentrismo 
+
+
+
+3 preguntas mas comunes:
+    1. Hablame de ti
+        # Se podria especificar si a nivel personal o profesional
+        # Lo que se debe responder debe ir alineado con el puesto de trabajo que se busca
+
+        - profesional: enumerar los LOGROS y capacidades
+            1. INADEM - migracion y backup de BD logramos tal proyecto, se logro la mejora de compresion con la interaccion con el usuario final 
+            2. CENAPRED - soporte a pagina de mapas, migracion de todo el sistema, automatizacion de procesos con python
+        - personal: pasatiempos
+            1. Musica, relajacion 
+            2. Tiempo de calidad con familia
+            3. Aprender siempre nuevas tecnologias
+
+    2. Porque deberiamos contratarte?
+        # Demostrar que se ha investigado a la empresa (IMPORTANTE), como se aportaría a la empresa
+        # Cuales son las fortalesas y logros
+
+    3. Cual es tu debilidad?
+        #  Ser sincero, p. ej
+            - no tengo experiencia en .... PERO me gustan los retos y aprender nuevas tecnologias
+            - soy un poco amiguero PERO estoy trabajando para mejorar eso y que no distraiga del trabajo
+            - bajo presion suelo estresarme PERO tengo practica en el asunto para poder controlarlo
+
+
+IMPORTANTE TENER:
+- CV (1 cuartilla y profesional)
+- Portafolio 
+- Sitio Web
+- Tarjetas de presentacion
+
+
+
+
+CARTA DE PRESENTACION
+==================================================================================================
+
+He tenido ocasión de ver la oferta publicada en Indeed en el que solicitan un desarrollador full stack
+
+Estoy realmente interesado y motivado en trabajar en su empresa, estoy capacitado para cubrir el puesto que solicitan, 
+ya que mi experiencia profesional es de 5 años desarrollando aplicaciones y programando procesos automatizados para Sistemas. 
+Soy ingeniero en Computación egresado del IPN, poseo un nivel alto de inglés y he trabajado con diferentes tecnologías de desarrollo, 
+tal como demanda la oferta.
+
+Me encantaría mantener una conversación con usted en el horario de su mejor conveniencia para ampliarle personalmente la información que le remito. 
+Para ello podrá localizarme con facilidad en el número de teléfono 5549123880 o por correo electrónico a lfge89@gmail.com
+
+A la espera de sus noticias, le saluda atentamente,
+
+Luis Fernando García Evaristo
+
+
+
+
+PERFIL
+==================================================================================================
+
+Que es un Full-Stack developer:
+https://www.youtube.com/watch?v=Ok9qHeLxu10&list=LL&index=1&ab_channel=EDteam
+
+
+
+
+
+
+

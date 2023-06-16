@@ -1,0 +1,20 @@
+SUBIR PROYECTO DESDE ORDENADOR A REPOSITORIO DE GITHUB
+
+1. Se crea un repositorio nuevo desde github (vacio)
+    NOTA. se debe tener creado ya un proyecto localmente (archivos en ordenador)
+2. Se abre la consola git bash desde esa ubicacion (directorio) y se ingresan los comandos:
+    - git init                      Se inicia un repositorio nuevo
+    - git status                    (opcional) se ven los archivos en rojo, es decir, sin ninguna accion sobre ellos
+    - git add *                     Se agregan el archvio o todos como en este caso al estado intermedio
+    - git commit -m "mensaje"       Se debe especificar en el mensaje que hace el cambio que se esta agregando
+        NOTA: quiza salga error de configuracion global de git para ese caso es necesario agregar usuario y email
+        - git config --global user.name "nando"
+        - git config --global user.email lfge89@gmail.com
+    - git branch -M main            Se indica que se subira "esto" a la rama principal
+    - git remote add origin https://github.com/Nando-Garcia/nombre-repo.git         ruta especifica donde se subira el proyecto en el repositorio remoto
+    - git push -u origin main       Accion que sube los archivos al repositorio remoto 
+        NOTA 1: Se abrira una ventana para asociar git a github, dar clic en loggear con el browser, confirmar/autorizar en la ventana del navegador
+        NOTA 2: Se subiran los archivos en la consola de git bash, verificar en repositorio remoto (github para este ejemplo)
+
+NOTA: puede que exista problema local ('fatal error' en consola) para sincronizar git a github (usuario y contraseña)
+      posible solucion al error: https://linuxpip.org/git-error-fatal-authentication-failed/

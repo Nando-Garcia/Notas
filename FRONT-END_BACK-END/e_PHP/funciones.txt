@@ -1,0 +1,44 @@
+Funciones
+==================================================================================================
+
+file_get_contents               - Obtiene en una cadena el código fuente de la página de inicio de un sitio web
+    ej.
+    $página_inicio = file_get_contents('http://www.example.com/');
+    echo $página_inicio;
+
+-------------------------------------------------------------------------------------------------
+simplexml_load_file             - para archivos XML o paginas XML(web services), convierte el documento correcto XML del fichero dado en un objeto
+    ej.
+    if (file_exists('test.xml')) {
+        $xml = simplexml_load_file('test.xml'); 
+        print_r($xml);
+    }
+
+-------------------------------------------------------------------------------------------------
+json_encode                     - Retorna la representación JSON del valor dado
+    ej.
+        $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+        echo json_encode($arr);
+    devuelve:
+        {
+            "a":1,
+            "b":2,
+            "c":3,
+            "d":4,
+            "e":5
+        }
+
+json_decode                     - Contrario a 'json_encode'
+
+-------------------------------------------------------------------------------------------------
+file_exists                     - Comprueba si existe un fichero o directorio (devuelve true o false)
+    ej.
+    $nombre_fichero = './path/to/foo.txt';
+    if (file_exists($nombre_fichero)) {
+        echo "El fichero $nombre_fichero existe";
+    }
+
+
+
+-------------------------------------------------------------------------------------------------
+././ejemplo.php                 - regresar niveles

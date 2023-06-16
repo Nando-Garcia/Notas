@@ -1,0 +1,68 @@
+PRACTICAS
+==================================================================================================
+
+    POR HACER:
+    ------------------------------------------------
+Crear api rest y probarla sencilla con node.js
+https://www.youtube.com/watch?v=AWcm56_eNZg&ab_channel=Codelia
+https://www.youtube.com/watch?v=SbhzQqP1p70&ab_channel=C%C3%B3digoMorsa
+https://www.youtube.com/watch?v=bK3AJfs7qNY&ab_channel=FaztCode
+
+crear servicio aws (front -> vue.js         back -> node.js)
+https://jasonwatmore.com/post/2018/07/14/vue-vuex-user-registration-and-login-tutorial-example
+https://www.youtube.com/watch?v=mpCZuQ17nHs&t=26s&ab_channel=JasonWatmore
+otro
+https://www.youtube.com/watch?v=d5s21UpDeps&ab_channel=HaroldAchipiz
+
+Skill de alexa
+https://www.youtube.com/watch?v=DapULctX1Es&ab_channel=TypeCode
+https://www.youtube.com/watch?v=1DSp7np4K6g&ab_channel=EdransSocial
+
+
+crear pagina propia (portafolio) con algun framework
+
+
+crear dominio con hostinguer o con propuesta de video
+https://www.youtube.com/watch?v=9GaVCsPuDB4&ab_channel=AntonioSarosi
+    hosting recomendado:
+    https://www.hostinger.mx/?utm_medium=affiliate&utm_source=aff46609&utm_campaign=6&session=102b9e03fee7322a4e3aa52ae7d0d2
+    como configurarlo
+    https://www.youtube.com/watch?v=1eu4hY1bZTM&ab_channel=FabianElPublicista
+
+
+
+    HECHAS:
+    ------------------------------------------------
+crear repositorio en git hub y hacer cambios con git
+https://www.youtube.com/watch?v=eQMcIGVc8N0&ab_channel=CristianHenao
+https://www.youtube.com/watch?v=VdGzPZ31ts8&ab_channel=HolaMundo
+aprender a usar github
+
+
+aprender node y desplegar proyectos con heroku
+https://www.youtube.com/watch?v=i3OdKwuBjeM&t=15775s&ab_channel=Fazt
+https://dashboard.heroku.com/apps/primer-deploy-nando/deploy/heroku-git
+
+
+
+
+
+
+
+
+
+
+
+ANOTACIONES DE ESTUDIO
+==================================================================================================
+consumir api rest con javascript puro
+https://www.youtube.com/watch?v=2Xm9P_tXtK8&list=PLUdlARNXMVkm5NAUw3VQG5RcZIhquVXD2&index=13&ab_channel=CarlosAzaustre-AprendeJavaScript
+
+profundizar en js
+https://www.youtube.com/playlist?list=PLUdlARNXMVkm5NAUw3VQG5RcZIhquVXD2
+
+curso de vue y vuex (3.55 hrs)
+https://www.youtube.com/watch?v=Wd9dOIlTWCc&ab_channel=CarlosAzaustre-AprendeJavaScript
+
+curso de node-express (4.00 hrs)
+https://www.youtube.com/watch?v=JmJ1WUoUIK4&ab_channel=Fazt

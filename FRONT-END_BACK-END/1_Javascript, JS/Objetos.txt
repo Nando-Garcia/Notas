@@ -1,0 +1,37 @@
+OBJETOS (metodo 'object')
+==================================================================================================
+Declarar un objeto (variables y metodo)
+   const p = {
+       nombre: "Nando",
+       hello: () => console.log(p.nombre)
+   }   
+   p.hello();     //llama al metodo 'hello' del objeto 'p'
+
+
+Agregar valores a un objeto ya definido
+   var dataRequest = { stations: 1 };
+   dataRequest["rain"] = 1;
+ej. practico (agregar valor a objeto de un valor de un input check en html usando jquery) 
+   dataRequest["period"] = $("input[name='periodo']:checked").attr("data-period");
+
+
+fuentes:
+https://www.freecodecamp.org/espanol/news/javascript-crear-objecto-como-definir-objetos-en-js/
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects
+
+
+Metodos                          (usando la funcion flecha)
+-----------------------------------------------------------
+freeze         (paraliza el objeto, es decir, no se pueden modificar sus atributos)
+   p ej. usando el objeto anterior
+   Object.freeze(p)
+
+keys           (convierte objetos a array)
+   p ej.
+   const ciudades = {};
+   Object.keys(ciudades)
+
+NOTA: ver ejercicio de ordenamiento de ciudades
+
+
+

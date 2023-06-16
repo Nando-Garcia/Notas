@@ -1,0 +1,8 @@
+ATAJOS CON EL TECLADO PARA FUNCIONES EN WINDOWS
+==================================================================================================
+
+Win + '+'           Funcion de lupa 
+Win + ,             Vista temporal del escritorio 
+Win + i             Configuracion de windows
+Win + g             Graba la pantalla
+Seleccionar varios archivos + F2        Cambiar de nombre varios archivos a la vez

@@ -1,0 +1,59 @@
+DOCKER
+==================================================================================================
+
+Gestor de contenedores basado en LXC que posteriormente fue reemplazado por su propio motor de contenedores llamado LIBCONTAINER escrito en GO
+Docker simplifica la gestion de los contenedores, tiene 3 etapas:
+
+    1. Docker File - Documento de texto que contiene todos los comandos e instrucciones para instalar todas las dependencias de una aplicacion (como un manual)
+    2. Docker Image - archivo ejecutable que ya contiene todas las dependencias y el software que se va a correr alli, a partir de esas imagenes es que 
+        se crean los contenedores, (en POO es como si la imagen fuera la clase y los contenedores los objetos, es decir instancias de dicha imagen)
+    3. Docker Container - Imagen ya funcionando o corriendo, lista para desarrollar sobre ella, este ya es el contenedor 
+
+NOTA 1: Ya que el DOCKER FILE  es un documento de texto se puede llevar un registro de versiones con GIT  
+NOTA 2: Existe un sitio en internet llamado DockerHub (https://hub.docker.com/), que es un concentrador mundial de trabajos (imagenes)
+
+
+
+COMO FUNCIONA DOCKER
+------------------------------------------------------------
+
+Docker es una alternativa a las maquinas virtuales, mucho mas ligero, evita el desperdicio de recursos ni costos de licenciamiento si fuera el caso, 
+pues se puede reutilizar el kernel del SO base y solo se agregan las librerias y aplicaciones adicionales, ejemplo de direferencia entre MV y Docker:
+
+    Maquina Virtual (Virtualizan el hardware)           |   Docker (Virtualiza a nivel SO - sobre le mismo kernel)
+    - 2 cpu, 4 GB RAM                                   |   -  debian, node
+    - 1 cpu, 16 GB de RAM                               |   -  ubuntu, MySQL
+
+
+NOTA PRINCIPAL: Todos los contenedores son comunicados mediante una red 
+
+NOTA 1: Todos los contendores se deben crear sobre el mismo kernel, es decir, un servidor (fisico) con linux instalado (cualquier distro) y dockerizar
+        cualquier distro basada en el mismo kernel. En otras palabras, no se puede instalar contenedores de windows en linux debido a la ausencia
+        del kernel de windows, si se requieren crear contenedores de windows se debe hacer sobre servidores Windows
+NOTA 2: A la fecha si se puede dockerizar linux sobre servidores Windows, pues nativamente ya corre linux en Windows
+
+NOTA 3: Se recomienda usar 1 contenedor por servicio (p ej, app en node, BD en MySQL, y cache en redis - total 3 contenedores) debido a:
+            - escalabilidad del proyecto
+            - portabilidad, los errores se resuelven de manera mas facil y rapida
+            - actualizaciones, si hay nuevas funciones en nuestra app se puedne actualizar de manera independiente e incremental en el cluster de contenedores
+            - seguridad, hay menos vulnerabilidades si cada seccion de la app esta aislado y separado en su propio contenedor
+            - proceso principal, cada DOCKER-FILE al final tiene un proceso principal (node p ej.) mediante un ENTRYPOINT/CMD, ejemplo:
+              CMD ["node", "index.js"] - aunque ese contenedor tenga muchos procesos siempre es UNO el principal, en este ej node es el PROCESO PRINCIPAL
+                                         IMPORTANTE: DOCKER apagara automaticamente el contenedor si por algo termina/falla el PROCESO PRINCIPAL 
+            - registros, los 'logs drivers' estan separados por lo que su consulta es de manera mas facil 
+
+            fuente:
+            https://www.youtube.com/watch?v=dPh2C6kswPQ&ab_channel=RingaTech
+
+NOTA 4: NGINX (balanceador de carga) permite la escalabilidad de la aplicacion creando o replicando contenedores existentes 
+
+
+
+
+EJEMPLO
+------------------------------------------------------------
+
+ejemplo de comando en linux para iniciar dos contenedorer con docker
+    - docker run -it -d ubuntu          Se creo un contenetor con la distro de linux ubuntu 
+    - docker run -it -d alpine          Se creo un contenetor con la distro de linux alpine 
+    - docker ps                         Enlista los contenedores ejecutandose con su IDENTIFICADOR

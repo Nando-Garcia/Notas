@@ -1,0 +1,11 @@
+STREAMS
+==================================================================================================
+
+Ayudan a enviar o dividir archivos grandes en varias partes para su facil transmision, 
+ej. practico: ver una pelicula online 
+
+para utilizar esta funcion (createReadStream) del modulo 'fs' de node con el modulo HTTP ver: Ejercicio/stream_http.js
+
+para entender mejor este modulo leer la documentacion 
+https://nodejs.org/api/stream.html
+

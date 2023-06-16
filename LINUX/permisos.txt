@@ -1,0 +1,37 @@
+PERMISOS
+==================================================================================================
+
+- ll
+d/-/l    _ _ _   _ _ _   _ _ _      Enlaces     Propietario     Grupo     Tamaño       Fecha       Hora     Nombre
+
+    tipo
+    d   -->     directorio
+    -   -->     archivo
+    l   -->     enlace
+
+    1a tercia -->   permisos de PROPIETARIO
+    2a tercia -->   permisos de GRUPO
+    3a tercia -->   permisos de OTROS/EXTERNOS
+
+    permisos
+    -   -->     sin permisos
+    r   -->     lectura
+    w   -->     escritura
+    x   -->     ejecucion
+
+
+
+
+asignar permisos
+
+- sudo chmod 777 directorio/archivo.txt
+    777 = 111 111 111 (todos los permisos, no recomendado) 
+
+000 - 0
+001 - 1
+010 - 2
+011 - 3
+100 - 4
+101 - 5
+110 - 6
+111 - 7

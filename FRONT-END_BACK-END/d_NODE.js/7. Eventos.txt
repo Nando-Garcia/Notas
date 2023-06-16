@@ -1,0 +1,23 @@
+EVENTS
+==================================================================================================
+
+Al estar en un navegador existen eventos como escuchar botones, teclado, etc, como el ejemplo siguiente:
+
+                            <button id="btn">
+                                click
+                            </button>
+
+                            <script>
+                                const btn = document.querySelector('#btn')
+                                btn.addEventListener('click', function () {
+                                    alert ("Has dado click al boton!")
+                                })
+                            </script>
+
+En Node tambien existen eventos pero de otro tipo, no de interfaz como en el ejemplo anterior sino con eventos relacionados a DATOS, algunos
+metodos del objeto creado a partir de 'EventEmitter' son:
+
+    .on             Escucha el evento (recibe parametro)
+    .emit           Emite un evento (envia parametro)
+
+ver Ejercicios/events.js

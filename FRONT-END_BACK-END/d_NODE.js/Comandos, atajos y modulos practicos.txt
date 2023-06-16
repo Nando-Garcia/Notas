@@ -1,0 +1,40 @@
+COMANDOS Y ATAJOS
+==================================================================================================
+
+COMANDOS
+------------------------------------------------
+#                       Comentarios
+node                    Entra al REPL 'entrada de comandos'
+.exit                   Termina proceso actual corriendo (setInterval p ej.)
+.help                   Muestra comandos utiles
+process                 Acceso a alguna informacion del SO e informacion de node istalado (objeto)
+    process.cwd()       Muestra la ubicacion actual 
+os                      Informacion del sistema
+    os.userInfo()       Muestra informacion del usuario del SO
+node -e " "             Ejecuta instrucciones sin entrar al REPL
+.save ejemmplo.js       Guarda los comandos utilizados de esa sesion de node en el archivo 'ejemplo.js'
+
+
+
+
+
+ATAJOS
+------------------------------------------------
+Ctrl + L                Limpia la consola 
+arriba, abajo           Hitorial de comandos
+Ctrl + C (x2) o Ctrl D  Termina procesos
+
+
+
+
+MODULOS
+------------------------------------------------
+
+Todos los modulos enlistados y mas se pueden consultar en:
+https://www.npmjs.com/
+
+- cowsay                Muestra una vaquita imprimiendo un mensaje 
+- http-server           Permite crear un servidor con un solo comando sin necesidad de configurar todo su comportamiento (http.js p ej.)
+- serve                 Mismo fin, permite crear un servidor con un solo comando pero este siempre esta funcionando por tanto cualquier cambio en el html se refleja al guardar 
+- promisify             Modulo dentro de node, sin necesidad de instalarlo, sirve para facilitar el uso de promesas
+                        Aunque actualmente el modulo 'fs' ya tiene integrado las promesas, basta con llamarlo: const {readFile} = require("fs/promises")

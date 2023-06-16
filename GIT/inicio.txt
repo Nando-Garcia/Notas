@@ -1,0 +1,87 @@
+GIT
+==================================================================================================
+
+Sistema de control del versiones, permite el trabajo de desarrollo en equipo, proyecto desentralizado, es decir
+cada miembro del equipo tiene una copia del proyecto
+
+Existen otros versionadores como:                       Existen otros repositorios ademas de GITHUB como:
+- Mercurial                                             - Gitlab
+- Subversion                                            - BitBucket
+- TFS                                                   - Team Foundation Server
+                                                        - AWS CodeCommint
+
+
+CONCEPTOS Y SOFTWARE
+------------------------------------------------
+GIT BASH (Bourne-Again Shell)
+Aplicacion que se incluye en la instalacion de GIT, en el ordenador es una terminal que nos permite ejecutar 
+comandos de GIT y emula los comandos de LINUX en cualquier SO
+    NOTA: NO se recomienda utilizar los comandos en cmd para utilizar GIT 
+
+descarga:
+https://git-scm.com/downloads
+
+CONSEJO: No agregar imagenes, videos, diseños etc (archivos pesados) a git para no hacer 
+         el repositorio pesado y dificil de manejar, en git solo manipular codigo, para ello 
+         guardar esos archivos en otro lugar especifico o en un servicio de internet como 
+         AWS - Amazon S3
+
+
+COMANDOS BASICOS
+==================================================================================================
+
+INICIO DE PROYECTO
+------------------------------------------------
+git init                - todos lor archivos y subarchivos de esa carpeta/directorio quedan listos para guardarlos en historial
+                          (se crea una carpeta oculta donde se guardara toda la informacion)
+    NOTA: se puede agregar un archivo (.gitignore) que ignorara todos los archivos o carpetas que no se guardaran en git 
+
+git clone               - guarda una copia del proyecto localmente de un servidor central o de la nube (p ej github)
+    ejemplo:
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+
+
+SEGUIMIENTO DEL PROYECTO
+------------------------------------------------
+git log                 - enlista todos los commits que se hemos hecho localmente
+
+git checkout --         - Sirve para revertir los cambios de los archivos
+    ejemplo:
+    $ git checkout -- index.html            Regresa el archivo index.html antes de los cambios realizados desde el ultimo commiit
+
+git diff                - Ver las diferencias hechas en los archivos entre el ultimo cambio (ctrl + s) y el ultimo commit hehco en git, se abrira el contenido del archivo
+    ejemplo:
+    $ git diff index.html
+        - las lineas con un '+' indican lo que se ha agregado (verde)
+        - las lineas con un '-' indican lo que se a borrado (rojo)
+
+
+
+DESARROLLO DEL PROYECTO
+------------------------------------------------
+Una vez hecho la copia y haber trabajado en ella se deben subir los cambios al proyecto principal (rama principal) 
+para ello ver los archivos txt de creacion y seguimiento 
+
+
+
+
+fuente:
+https://www.youtube.com/watch?v=M8H-mT4oeAg&ab_channel=ProgramadorX
+https://www.youtube.com/watch?v=VdGzPZ31ts8&ab_channel=HolaMundo
+
+
+
+
+CONFIGURACION   
+------------------------------------------------
+git --version                                                           - muestra la version de git instalada
+git config --global user.name "Nando García"                            - configuracion global de git NO de proyecto, nombre 
+git config --global user.email lfge89@gmail.com                         - correo 
+git config --global core.editor "code --wait"                           - editor de texto usado (VS CODE) --wait (opcion para que la terminal espere a que cerremos el editor de texto)
+git config --global -l                                                  - ver la configuracion global en la terminal
+git config --global -e                                                  - ver el archivo de configuracion global
+
+ 
+
+

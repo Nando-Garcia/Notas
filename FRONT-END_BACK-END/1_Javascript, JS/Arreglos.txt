@@ -1,0 +1,68 @@
+ARREGLOS
+==================================================================================================
+Declarar un arreglo 
+   let arreglo = [];                            //arreglo vacio
+   let arreglo = ["hugo", "paco", "luis"]       //arreglo definido por strings
+   const array = [
+     { id: 1, username: "Mapper"},
+     { id: 2, username: "Finder"},
+     { id: 3, username: "Eaching"}
+   ];                                           //arreglo definido por objetos
+
+
+Metodos      (usando la funcion flecha en algunos ejemplos)
+-----------------------------------------------------------
+map            (crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos)
+   p ej. (convierte array a array de objetos)
+      Object.keys(ciudades).map(ciudad => ({nombre: ciudad, vecesRepetidas: numero}))
+
+   otro ej. (agrega apellido a cada nombre del arreglo definido)
+      const nombres = ["hugo", "paco", "luis"]
+      const nombres_completos = nombres.map(nombre => `${nombre} Garcia`)
+
+forEach        (ejecuta unicamnete la función callback que definimos)
+   p ej.
+      const array = [10, 20, 30, 40, 50];      |       const array = [10, 20, 30, 40, 50];
+      array.forEach(function(element) {        |       array.forEach(element => {  
+        console.log(element);                  |         console.log(element);
+      });                                      |       });
+
+forIn
+
+forOff
+
+find           (encuentra el primer valor que cumpla con función que definimos)
+   p ej.
+   const array1 = [5, 12, 8, 130, 44];
+   const found = array1.find(element => element > 10);
+   console.log(found);
+   // expected output: 12
+
+filter         (crea un nuevo arreglo con elementos que cumplan con las condiciones del filtro)
+   p ej.
+   const array = [
+     { id: 1, username: "Mapper"},
+     { id: 2, username: "Finder"},
+     { id: 3, username: "Eaching"}
+   ];
+
+   const filtered = array.filter(function(element){      |      const filtered = array.filter(element =>  element.id > 2);          
+     return element.id > 2;                              |                                         
+   });                                                   |      
+
+sort           (ordenamiento, puede recibir dos parametros)
+   p ej. 
+   //ordena por veces repetidas en el arreglo
+   var numbers = [4, 5, 5, 1, 3, 4, 5];                  |      var numbers = [4, 5, 5, 1, 3, 4, 5];
+   numbers.sort(function(a, b) {                         |      numbers.sort((a, b) => b - a)
+     return b - a;                                       |      console.log(numbers);
+   });                                                   |
+   console.log(numbers);                                 |
+
+slice          (devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin, fin no incluido)
+   p ej.
+   var nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa'];
+   var masculinos = nombres.slice(1, 3);   
+   // masculinos contiene ['Pedro','Miguel']
+
+NOTA: ver ejercicio de ordenamiento de ciudades

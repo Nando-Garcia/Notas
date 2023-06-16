@@ -1,0 +1,73 @@
+PERFILES
+==================================================================================================
+
+LINKEDIN
+https://www.linkedin.com/feed/
+
+        perfil modelo, usar como plantilla:
+        https://www.linkedin.com/in/xavier-reyes-ochoa/
+
+GITHUB
+https://github.com/Nando-Garcia
+
+        personalizacion:
+        https://www.youtube.com/watch?v=9YcJ5PDkHPE&ab_channel=YouDevs
+
+
+
+SERVICIOS
+==================================================================================================
+
+GITHUB PAGES
+
+
+FIREBASE
+https://console.firebase.google.com/u/0/
+
+
+HEROKU
+https://dashboard.heroku.com/apps
+
+
+
+
+
+        ---------------------------------------------------
+        NOTA: Credenciales en archivo propio.kdbx (keepass)
+        ---------------------------------------------------
+
+
+
+
+PORTAFOLIO
+==================================================================================================
+
+DNS
+---------------------------------------------
+https://www.sci-net.com.mx
+        Soluciones y computo en internet
+
+
+PROYECTO CON NODE SOBRE HEROKU
+---------------------------------------------
+https://primer-deploy-nando.herokuapp.com/
+
+
+
+                                FIREBASE
+                                ---------------------------------------------
+                                proyectos de prueba en linea, recomendado hacer peticiones HTTP con Postman:
+                                https://primer-proyecto-4543d-default-rtdb.firebaseio.com/
+
+                                        fuente:
+                                        https://www.youtube.com/watch?v=SbhzQqP1p70&ab_channel=C%C3%B3digoMorsa
+
+
+
+WEB-SERVICE
+---------------------------------------------
+
+
+AWS-SERVICE
+---------------------------------------------
+

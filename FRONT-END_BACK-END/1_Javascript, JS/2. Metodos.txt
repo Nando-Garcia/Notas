@@ -1,0 +1,147 @@
+Syntaxis y metodos en codigo
+==================================================================================================
+
+         Correr codigo desde browser:
+         https://jsbin.com/
+
+-------------------------------------- COMPARAR SI UNA VARIABLE ESTA DEFINIDA, equivalente a 'isset' en php
+
+    if (typeof variable !== 'undefined') {
+       alert (hay variable);
+    }
+
+-------------------------------------- += equivalente a:
+
+   var vidas;
+   vidas = vidas + 1;     entonces...    vidas += 1;
+   let A = 10;
+   let B = 5;
+   B = B + A;             entonces...    B += A;
+
+-------------------------------------- if sencillo
+
+Variable = (condición) ? valor1 : valor2
+   p ej.
+   let momento = (hora_actual < 12) ? "Antes del mediodía" : "Después del mediodía"
+   console.log(momento);
+
+-------------------------------------- => funcion flecha
+
+Una expresión de función flecha es una alternativa compacta a una expresión de función tradicional, 
+pero es limitada y no se puede utilizar en todas las situaciones.
+   ejemplo 1.
+      // Función tradicional
+      function (a, b){
+        return a + b + 100;
+      }
+      // Función flecha
+      (a, b) => a + b + 100;
+
+   ejemplo 2.
+      // Función tradicional
+      function (a, b){
+        let chuck = 42;
+        return a + b + chuck;
+      }      
+      // Función flecha
+      (a, b) => {
+        let chuck = 42;
+        return a + b + chuck;
+      }
+
+   ejemplo 3.
+      // Función tradicional
+         function bob (a){
+           return a + 100;
+         }
+      // Función flecha
+      let bob = a => a + 100;
+
+fuente:
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+
+-------------------------------------- EJECUTAR FUNCION REPETITIVA (CADA SEGUNDO) CON FUNCION FLECHA
+
+   setInterval(()=>console.log("it's not over yet!"),1000)
+
+-------------------------------------- CONVERTIR OBJETO JS A JSON (SERIALIZAR)
+   JSON.stringify()
+
+CONVERTIR JSON JS A OBJETO (DESERIALIZAR)
+   JSON.parse()
+
+   ej.
+      const json = '{"result":true, "count":42}';
+      const obj = JSON.parse(json);
+
+      console.log(obj.count);
+      // expected output: 42
+
+      console.log(obj.result);
+      // expected output: true
+
+-------------------------------------- split
+
+Divide un objeto de tipo String en un array de cadenas mediante la separación de la cadena en subcadenas
+
+   ej.
+      const cadena = "Hola a todos amigos"
+      cadena.split(" ")
+      // ["Hola","a","todos","amigos"]
+
+-------------------------------------- continue
+
+Se salta una iteracion dentro de un bucle
+Si el 'if' se cumple no continua debajo del 'if' sino toma el siguiente valor del 'for'
+
+   ej.
+      function algo (usuaios)
+         for (const uno of usuaios) {
+            if (!uno.isLoggedIn() || !uno.isAdmin()) {         // 'and' negado  - if (uno.isLoggedIn() && uno.isAdmin()) -
+               continue
+            }
+            .
+            .
+            .
+            .
+         }
+
+-------------------------------------- ??
+
+funcion de 'or'
+
+   ej. haciendo un diccionario, sustituye al switch
+      function getColor(color) {
+         const hex = {
+            blue: '#0000FF',
+            red: '#FF0000',
+            green: '#00FF00',
+         }
+         return hex[color] ?? '#FFFFFF'   //blanco 
+      }
+
+-------------------------------------- Template String
+
+son cadenas literales que habilitan el uso de expresiones incrustadas, se definene con tildes invertidas
+
+   ej.
+      var cadena-de-texto = `texto de cadena de caracteres ${expresión} texto adicional`
+
+-------------------------------------- Arreglos multidimensionales
+
+En escencia es un arreglo de arreglos, este puede ser tan grande como se desee
+
+   ej. 2x2 
+      let activities = [
+         ['Work', 9],
+         ['Eat', 1],
+         ['Commute', 2],
+         ['Play Game', 1],
+         ['Sleep', 7]
+      ];
+
+      console.table (activities) // imprime en forma de tabla
+
+-------------------------------------- Arreglos multidimensionales
+

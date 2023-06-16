@@ -1,0 +1,19 @@
+GENERAR CERTIFICADOS/ARCHIVOS .CSR Y .KEY con SSH
+
+1. Abrir terminal ssh como root
+2. Generar archivo .KEY 
+    - sudo openssl genrsa -out  CSR_Jupiter_Servicios1.key 2048
+3. Generar la solicitud .CSR
+    - sudo openssl req -key CSR_Jupiter_Servicios1.key -out CSR_Jupiter_Servicios1.csr -new -sha256
+4. Agergar informacion
+    - Pais, ciudad, localidad
+    - Organizacion y area
+    - dominio (www.atlasnacionalderiesgos.gob.mx), sin http
+    - email y password (pueden ir en blanco)
+5. Mandar la salida al nuevo archivo 
+    - out CSR_Jupiter_Servicios1.crt
+6. Validar los datos
+    - openssl req -in CSR_Jupiter_Servicios1.csr -noout -text
+
+
+NOTA: Se generaran ambos archivos en la ubicacion donde se hayan ejecutado los comandos

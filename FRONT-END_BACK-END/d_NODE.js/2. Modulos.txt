@@ -1,0 +1,61 @@
+MODULES
+==================================================================================================
+
+Permite que una aplicacion este dividida en varias partes/archivos, asi evita tener un index.js muy extenso
+ej de sistema de archivos de aplicacion:
+    module/myModule.js
+    main.js
+    globals.js
+    index.js
+
+NOTA: El objeto MODULE tine un metodo llamado EXPORTS, el cual nos muestra qué podemos utilizar en 
+      otras partes de la aplicacion, agregar datos al exports:
+
+      const miDireccionWeb = "sci-net.com"
+      module.exports = miDireccionWeb
+      console.log(module)
+
+      Se pueden exportar, cadenas, numeros , objetos, asi como varias variables (todas en un objeto p.ej)
+
+      Una vez guardado en 'exports' se puede acceder a el mediante require desde otro archivo
+      --> ver ejemplo 'Primer-Proyecto'
+
+De no querer compartir alguna variable simplemente no se agrega al 'module'
+
+    ------------------------------------------------------------------------------------------------
+    Otra forma mas moderna exportar los modulos con ECMAscript es (ej. /Practicas/Primer_Proyecto/operaciones_matematicas/index.js):
+
+        module.exports = {      ||          export default = {   
+            suma,               ||              suma,
+            resta,              ||              resta,
+            producto,           ||              producto,
+            division            ||              division
+        }                       ||          }
+
+    Para importarlo desde esta nueva forma es como sigue:
+        import math from '../Practicas/Primer_Proyecto/operaciones_matematicas/index.js'
+
+    NOTA: se debe ejecutar sobre la ubicacion del archivo js:
+            npm init -y para iniciar un nuevo proyecto de node rapidamente sin configurar nada y se debe añadir en el package.json:
+            -- "type": "module", --
+
+    
+    ver (/Practicas/Primer_Proyecto/esmodule.js)
+    ------------------------------------------------------------------------------------------------
+
+
+Para hacer uso de los modulos se requiere la API de NODE:
+https://nodejs.org/api/modules.html
+
+Algunos modulos usados en node son:
+    - os        (informacion del sistema, ver Ejercicios/os.js)
+    - path      (carpetas, archivos y sus direcciones ver Ejercicios/path.js)
+    - fs        (crear archivos, leerlos, eliminarlos o alterarlos, ver Ejercicios/fs.js)
+    - http      (permite responder un REQUEST del cliente con un RESPONSE ver Ejercicios/http.js)
+
+IMPORTANTE:
+Existen dos tipos de modulos en un proyecto 
+    1. dependencies             Modulos necesarios para funcionamiento del proyecto     ->      (fundamentales)
+    2. devDependencies          Modulos para comodidad al desarrollar el proyecto       ->      (no fundamentales)
+
+------------------------------------------------------------

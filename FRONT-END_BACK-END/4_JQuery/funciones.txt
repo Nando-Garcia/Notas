@@ -1,0 +1,24 @@
+jQUERY
+==================================================================================================
+COMPROBAR SI EL ELEMENTO ES VISIBLE
+    if ($('#elemento').is(':visible')) {            //ó (:hidden)
+        $('#elemento').hide();
+    }
+
+
+OBTENER VALOR DE ATRIBUTO DE UN INPUT CHECK 
+    $("input[name='ejemplo']:checked").attr("data-period");
+    html:
+        <div class="layerOptions">
+          <label for="30minLluvia"><input type="radio" name="ejemplo" id="30minLluvia" data-period="A30">Últimos 30 minutos</label>
+          <label for="1hrLluvia"><input type="radio" name="ejemplo" id="1hrLluvia" data-period="A1">Última hora</label>
+          <label for="2hrLluvia"><input type="radio" name="ejemplo" id="2hrLluvia" data-period="A2">Últimas 2 horas</label>
+          <label for="3hrLluvia"><input type="radio" name="ejemplo" id="3hrLluvia" data-period="A3">Últimas 3 horas</label>
+          <label for="24hrLluvia"><input type="radio" name="ejemplo" id="24hrLluvia" data-period="A24">Últimas 24 horas</label>
+          <label for="48hrLluvia"><input type="radio" name="ejemplo" id="48hrLluvia" data-period="A48">Últimas 48 horas</label>
+          <label for="72hrLluvia"><input type="radio" name="ejemplo" id="72hrLluvia" data-period="A72">Últimas 72 horas</label>
+          <label for="noneLayerLluvia"><input type="radio" name="ejemplo" id="noneLayerLluvia" data-period="A0" checked>Ninguno</label>
+        </div>
+==================================================================================================
+
+

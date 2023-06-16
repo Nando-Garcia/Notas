@@ -1,0 +1,12 @@
+MEMORIA
+==================================================================================================
+
+df -h               - particiones y espacio ocupado
+lsblk	            - capacidad de particiones
+dmesg	            - numero de nucleos
+free -h             - memoria ram
+
+lsblk -fm           - muestra particiones y HDDSs (espacio)
+df -f /var          - muestra espacio usado en algún directorio, p ej. /var
+du -h /var/www      - muestra el total en bytes de los archivos en esa carpeta
+

@@ -1,0 +1,67 @@
+NODE.js o NODE
+==================================================================================================
+ 
+Entorno de ejecucion ("Runtime system" o "Runtime Environment") en el Back-End para Javascript construido 
+con el motor V8 de Chrome (esta incluido dentro de Chrome en el Front-End). Node es un ambiente asincrono (respuesta a travez de eventos)
+
+- Entorno de ejecucion
+    Capa encima del SO que ejecuta una pieza de software, responsable de decidir como se consume la memoria, 
+    como se accede a las variables, como pasar parametros entre procedimientos o cuando y como ejecutar el "Garbage Collector"
+- Chrome V8
+    Motor OpenSource de Javascript desarrollado por "The Chromium project" para los navegadores Chrome y Chromium, por su tecnologia
+    "Just In Time" Compila codigo Javascript
+
+NOTA 1: Un scrypt en NODE puede acceder a la BD, modificaciones o transformaciones y manipular archivos JSON de dichos datos enviandolo de 
+        regreso al cliente, otra cosa que puede hacer es manipular archivos y directorios del sistema, o recrusos del PC como camara p ej.  
+
+NOTA 2: Node.js fue creado con la idea de no bloquear (si el Back recibe un pedido se dispara un evento sin bloquear otros procesos)
+
+NOTA 3: Node.js fue pensado para paginas que soliciten eventos unos despues de otro como de streaming p. ej
+
+NOTA 4: Tambien trabaja bajo el concepto de "un hilo" pero si las solicitudes al Back-End son muchas se disparan simultaneamente (Load Balancing)
+
+
+2 tipos de metodos:
+    - metodos que bloquean
+    - metodos q NO bloquean - recomendado (event loop)
+
+
+
+
+TERMINOS:
+ - libuv                            Librería usada por node para bloquear procesos 
+ - aplicacines isomórficas          Aplicaciones con el mismo lenguaje tanto el el front como en el back
+ - npm (node package management)    Sistema de gestión de paquetes o librerias por defecto para NODE
+ - N                                Paquete que permite cambiar las versiones de NODE si se requiere, permite usar librerias q trabajen con diferentes versiones 
+ - EXPRESS                          Framework para NODE, permite trabajar con servidores web de forma mas eficiente atendiendo mejor los metodos GET, POST, PUT, DELETE, etc
+
+
+
+INSTALACION
+==================================================================================================
+
+WINDOWS
+------------------------------------------------
+(descargar la version LTS -estable-)
+https://nodejs.org/es/
+
+comprobar la instalacion, ver la version de node en el quipo desde cmd, comando:
+    node -v         (version de NODE)
+    npm -v          (version de gestor de paquetes de NODE instalado)
+
+fuente:
+https://www.youtube.com/watch?v=EsKJlhWs1XY&ab_channel=ProgramadorX
+
+
+
+
+LINUX
+------------------------------------------------
+https://kinsta.com/es/blog/como-instalar-node-js/
+
+
+
+
+Curso de Node
+------------------------------------------------
+https://www.youtube.com/watch?v=i3OdKwuBjeM&ab_channel=Fazt

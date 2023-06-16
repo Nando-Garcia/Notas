@@ -1,0 +1,29 @@
+FUNDAMENTOS
+==================================================================================================
+
+Ya instalado node con el comando 'node' se abre el interprete o REPL, donde ya recibe 
+instrucciones en js directamente al sistema y no en un navegador como es habitual
+
+En js en el navegador existen objetos con los cuales trabajar los documentos, ventanas etc
+estos son objetos globales (sin necesidad de importarlos) como por ej:
+    document    (documento HTML)
+    window      (ventana del navegador)
+pero cuando trabajamos con NODE no existen esos objetos porque no hay ventana ni documentos HTML
+pero SI existen otros objetos que permiten interactuar con el SO porque es justamente donde se esta 
+ejecutando, de igual forma son objetos globales, incluidos con NODE como por ej.
+    os 
+    process
+ver archivo Ejercicios/globals.js
+
+para ejecutar archivo js se debe especificar donde y cual archivo en node:
+    node ej/ej/ej/ejemplo.js
+
+Principales usos de Node en la vida real:
+    - Crear servidores
+    - Trabajar archivos
+    - Encriptar datos, etc
+
+NOTA 1: NODE detecta en que SO se esta ejecutando con el modulo 'os', asi que se puede desarrollar en windows 
+        y el mismo script ejecutarlo en linux, para ello hacer uso del modulo path y su propiedad sep (separator)
+        para usar los separadores segun el SO donde se ejecute (ver path.js) 
+       

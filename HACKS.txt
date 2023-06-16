@@ -1,0 +1,49 @@
+CONSEJOS Y TRUCOS PARA DESARROLLO
+==================================================================================================
+- Github Pages          Permite cargar una pagina estatica previamente programada a la red con dominio personalizado, 
+                        pero sin BD ni otros recursos como algun software de servidor, librerias, etc. Ideal para un CV en linea
+https://pages.github.com/
+
+------------------------------------------------
+- Google Trends         Herramienta de Google para entender que se busca en google
+https://trends.google.es/trends/?geo=MX
+
+Como usar:
+https://youtu.be/vGtKAg98lLE
+
+------------------------------------------------
+- Escrapear datos de sitio web
+Se puede extraer datos de las paginas web (tablas, divs, etc) con distitos software para obtenerlas
+teniendo en cuenta los permisos legales para hacerlo, algunos de estos software son:
+    1. OctoParse                Herramienta online
+        Ofrece plantillas y permite extraer datos de sitio web desdecon una app para el SO, requiere cuenta
+        https://www.octoparse.es/
+
+    2. Selenium-webdriver       Libreria de Javascript
+        https://www.selenium.dev/selenium/docs/api/javascript/index.html
+
+Software auxiliar:
+    1. FME
+        Herrameinta enfocada a la transofrmacion en formatos de datos
+
+    2. Zapier 
+        Herramienta en linea que permite automatizar procesos como el escrapeo
+        
+------------------------------------------------
+- Hosting recomendado MX$ 55 mensuales
+
+https://www.hostinger.mx/?utm_medium=affiliate&utm_source=aff46609&utm_campaign=6&session=1027731a8c752481cf49fd18b42eae
+
+------------------------------------------------
+- Libro de documentacion para lenguajes, librerias y frameworks
+ZEAL DOCS software
+https://zealdocs.org/               ---> dar clic en 'Installer (MSI)' para descargar software
+
+DEV DOCS    documentacion en linea de google
+https://devdocs.io/
+
+fuente:
+https://www.youtube.com/watch?v=8zZr-2KVb4I&list=LL&index=3&t=618s&ab_channel=VictorRoblesWEB
+
+
+

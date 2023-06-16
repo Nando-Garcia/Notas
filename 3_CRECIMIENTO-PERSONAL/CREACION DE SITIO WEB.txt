@@ -1,0 +1,34 @@
+PASOS PARA EL DESARROLLO DE SITIO WEB
+==================================================================================================
+
+    1. Planificacion
+        Aqui se plantean las funciones que tendra la aplicacion o sitio web, hacerlo preferentemente con el cliente,
+        tambien se plantean las tecnologias a usar para el desarrollo tanto del front como del back
+    2. Diseño
+        Se puede contratar a alguien para las imagenes o disño del sitio, si no basarse en plantillas en internet,
+        tener en cuenta hacerlo RESPONSIVO
+    3. Marcado HTML, Maquetación 
+        Colocar cabecera, menu, barras, secciones, imagenes, footer, etc
+    4. Estilos CSS
+        Colocar formas, colores, posiciones, fuentes, etc. Tambien incluir las funciones responsive
+    5. Interactividad JAVASCRIT
+        formularios, correo, busquedas, sliders, efectos, etc
+    6. Diseño de la BD (SQL)
+        Hacer un diagrama entidad relacion, incluyendo todas las funciones, usuarios, comentarios, sesiones, etc
+    7. Programacion Back-End
+        PHP, PYTHON, NODE, etc y/o algun framework, BD, interaccion con la BD, seguridad, adaptar si es el caso a la 
+        maquetación, parametros por URL, peticoones GET o POST con ajax, etc
+    8. Puesta en produccion
+        Contratar un Hosting o VPS
+
+
+
+
+COMO COBRAR POR UN SITIO WEB
+==================================================================================================
+Pagina estatica         (catalogo)
+
+Apliacacion web         (carrito y pago en linea)
+
+Administracion de negocio mediante interfaz y graficas (BD)
+

@@ -1,0 +1,10 @@
+CONCEPTOS Y PROCESOS
+==================================================================================================
+
+Archivos .sh
+Son como scripts con comandos de Linux para realizar una tarea especifica
+NOTA: se pueden automatizar su ejecucion como tarea programada (ver ejemplo de nubes)
+
+
+PROGRAMAR TAREAS
+------------------------------------------------
