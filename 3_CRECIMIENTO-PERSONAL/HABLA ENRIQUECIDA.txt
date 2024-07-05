@@ -5,3 +5,4 @@ enarbolar                       - Sostener en alto una bandera
 tropel                          - Conjunto numeroso de personas, animales o cosas que avanzan o se mueven de forma rápida, ruidosa y desordenada
 coacción                        - Violencia física, psíquica o moral para obligar a una persona a decir o hacer algo contra su voluntad
 vislumbre                       - Visión confusa o imprecisa de una cosa por la distancia o la falta de luz
+contumaz			            - Que es declarado en rebeldía por no comparecer en el juicio, después de llamado en forma, o por tener incumplida alguna orden judicial.
