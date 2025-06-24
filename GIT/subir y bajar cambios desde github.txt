@@ -24,4 +24,10 @@ BAJAR CAMBIOS DESDE GITHUB
    desde ese equipo desde ese ultimo cambio, para eso ingresar los comandos:
     - git pull              desde el directorio local con el proyecto ya iniciado con git
 
+
+========
+CAMBIOS PRUEBA 1
+CAMBIOS PRUEBA 2
+CAMBIOS PRUEBA 3
+
     
