@@ -1,30 +1,30 @@
-TERMINOLOGIA
-====================================================================================================================================================================================================
-1. ECMAScript v6
+# TERMINOLOGIA
+==============================================================
+# 1. ECMAScript v6
 
     Abreviado como ES6 o ES2015 es una especificación de lenguaje de programación publicada por ECMA International.
     Ejemplo de lenguaje basado en este estandar: Javascript
 
-====================================================================================================================================================================================================
-2. MIDDLEWARE - Software intermedio entre SO y aplicaciones
+==============================================================
+# 2. MIDDLEWARE - Software intermedio entre SO y aplicaciones
     Principales:
     - JSON
     - WebAPI
     - RestAPI
 
-====================================================================================================================================================================================================
-3. Deploy y Pipelines
+==============================================================
+# 3. Deploy y Pipelines
 
-====================================================================================================================================================================================================
-4. Jenkins
+==============================================================
+# 4. Jenkins
 
-====================================================================================================================================================================================================
-5. Websockets vs ajax
+==============================================================
+# 5. Websockets vs ajax
     https://www.youtube.com/watch?v=qJT2FY1jjjE&ab_channel=EDteam
 
 
-====================================================================================================================================================================================================
-6. Cookies (WEB)
+==============================================================
+# 6. Cookies (WEB)
 
     QUE ES? 
         Fichero de datos que una página web le envía a tu ordenador con informacion sobre el visitante para "recordarte cuando accedas de nuevo"
@@ -38,8 +38,8 @@ TERMINOLOGIA
     fuente:
     https://www.youtube.com/watch?v=QFrUTDfYgnM&ab_channel=MarketingDigitalyRedesSociales
 
-====================================================================================================================================================================================================
-7. CORS (Intercambio de recursos de origenes cruzados)
+==============================================================
+# 7. CORS (Intercambio de recursos de origenes cruzados)
 
     Mecanismo de seguridad de los navegadores, cuando llega una peticion al sevidor, este deterinara si el origen tiene permitido acceder
     a la informacion y por cuantas veces, si no tiene los permisos mandara un error (403 - CORS) o de lo contrario permitira el envio de la infomacion  
@@ -49,48 +49,48 @@ TERMINOLOGIA
     fuente:
     https://www.youtube.com/watch?v=YfN9hElekuM&ab_channel=LeiferMendez
 
-====================================================================================================================================================================================================
-8. GUI (Graphical user interface)
+==============================================================
+#  8. GUI (Graphical user interface)
 
     Interfaz de usuario grafica, para facilitar el uso de la app
 
-====================================================================================================================================================================================================
-9. CLI (Command-line Interface)
+==============================================================
+# 9. CLI (Command-line Interface)
 
     Interfaz de linea de comandos, o interprete de linea de comandos
 
-====================================================================================================================================================================================================
-10. WYSIWYG (Editor de texto HTML) 
+==============================================================
+# 10. WYSIWYG (Editor de texto HTML) 
 
     Permite ver resultados en ejecucion
 
-====================================================================================================================================================================================================
-11. SCM, VCS (System Control Manager)
+==============================================================
+# 11. SCM, VCS (System Control Manager)
 
     Sistema de control de versiones como GIT
 
-====================================================================================================================================================================================================
-12. CMS (Content Managment System)
+==============================================================
+# 12. CMS (Content Managment System)
 
     Sistema de control de contenido o gestor de contenido como JOOMLA o WORDPRESS
 
-====================================================================================================================================================================================================
-13. UI (User Interface) /UX (User Experience)
+==============================================================
+# 13. UI (User Interface) /UX (User Experience)
 
     Diseño enfocado a la interfaz grafica y a la experiencia del usuario
 
-====================================================================================================================================================================================================
-14. WIP (Work in progress)
+==============================================================
+# 14. WIP (Work in progress)
 
     En GIT por ejemplo al ahcer commit 'wip' significaria que el trabajo esta en progreso 
 
-====================================================================================================================================================================================================
-15. CDN (Delivery Content Network)
+==============================================================
+# 15. CDN (Delivery Content Network)
 
     Mandar llamar API, herramientas, funciones etc desde una URL, sin instalarlo en el equipo o proyecto
 
-====================================================================================================================================================================================================
-16. Hosting vs VPS (Virtual Private Server)
+==============================================================
+# 16. Hosting vs VPS (Virtual Private Server)
 
     Hosting - Servicio de almacenamiento de sitio/pagina/app web con servicios NO personalizables disponibles 
               pero de facil acceso y uso (pues todo ya esta configurado) como base de datos (MySQL p. ej.), Servidor (apache p. ej.) 
@@ -98,8 +98,8 @@ TERMINOLOGIA
     Servidor VPS - Servidor virtual con capacidades (hardware) configurables y adaptables con total libertad
               de instalacion de paquetes, software, librerias, etc como node, MariaDB, PHP-Laravel etc y con total acceso SSH
 
-====================================================================================================================================================================================================
-17. NGINX
+==============================================================
+# 17. NGINX
 
     Software libre y opensource de alto rendimiento, es una alternativa al servidor Apache, permite deplegar paginas, es decir 
     responder peticiones HTTP. 
@@ -119,8 +119,8 @@ TERMINOLOGIA
     Instalacion y configuracion:
     https://www.youtube.com/watch?v=_LQv96MdtCk&ab_channel=PeladoNerd
 
-====================================================================================================================================================================================================
-18. ORM
+==============================================================
+# 18. ORM
 
     En bases de datos ORM es Mapeo Objeto-Relacional
 
@@ -130,8 +130,8 @@ TERMINOLOGIA
 
     NOTA. en node el modulo 'sequelize' permite trabajar con ORM
 
-====================================================================================================================================================================================================
-19. Arquitectura ARM (Advanced RISC Machine - máquina RISC avanzada)
+==============================================================
+# 19. Arquitectura ARM (Advanced RISC Machine - máquina RISC avanzada)
 
     Arquitectura para chips x86 (32 bits) como procesadores para tareas muy especificas, tiene un bajo consumo energetico por la reduccion 
     de uso de transistores reduciendo la temperatura, una ventaja de esta arquitectura es que el procesador puede estar personalizada a la funcion 
@@ -146,8 +146,8 @@ TERMINOLOGIA
         - Apple esta apostando por esta arq.
 
 
-====================================================================================================================================================================================================
-20. Samba
+==============================================================
+# 20. Samba
 
     Alternativa de FTP para intercambio de ficheros dentro de la misma red entre un dispositivo y una PC con Windows
     ya que Samba fue creado por windows, su intalacion 
